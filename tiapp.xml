@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">false</target>
+        <target device="android">false</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>3.1.0.GA</sdk-version>
+    <id>de.appwerft.cookasa</id>
+    <name>Cookasa</name>
+    <version>1.0</version>
+    <publisher>rainerschleevoigt</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2012 by rainerschleevoigt</copyright>
+    <twitter-key>0DQ0cWIgw5gUBesBMFzMdg</twitter-key>
+    <twitter-secret>4FHKXL6q72DI6cO9LQ329bEFwhYY3k7DS7gg9LUYEM</twitter-secret>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>none</statusbar-style>
+    <statusbar-hidden>true</statusbar-hidden>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>b46602dc-6c2c-47b1-9b46-15f173cd0c5d</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">com.midhun.progress</module>
+        <module platform="iphone">ti.barcode</module>
+        <module platform="android">ti.barcode</module>
+        <module platform="iphone">me.izen.tabbar</module>
+        <module platform="iphone">net.iamyellow.tiws</module>
+    </modules>
+</ti:app>
